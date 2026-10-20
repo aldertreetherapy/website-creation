@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { PageContent, PageSection } from "@/content/pages";
 import { home, site } from "@/content/site";
 import { Credentials } from "@/components/home/HomeSections";
+import { IntroVideo } from "@/components/IntroVideo";
 import { jsonLd, pageGraph } from "@/lib/structured-data";
 import { ArrowLink, BookingButton, Container, Section, SectionHeading } from "@/components/ui";
 import { ClosingCta, FaqSection, OutOfNetworkSection } from "@/components/sections";
@@ -38,7 +39,7 @@ export function ContentPage({ page }: { page: PageContent }) {
 }
 
 function PageHero({ page }: { page: PageContent }) {
-  const shot = site.clinician.headshot;
+  const shot = page.hero.portraitVariant === "seated" ? site.clinician.seatedPhoto : site.clinician.headshot;
   const showPortrait = page.hero.portrait !== false;
   const showBooking = page.hero.booking !== false;
   return (
@@ -196,6 +197,15 @@ function SectionRenderer({ section, index, tone }: { section: PageSection; index
                 {section.caption}
               </figcaption>
             </figure>
+          </div>
+        </Section>
+      );
+    case "video":
+      return (
+        <Section tone={tone} labelledBy={`${id}-heading`}>
+          <SectionHeading id={`${id}-heading`} eyebrow={section.eyebrow} heading={section.heading} />
+          <div className="mt-10 grid md:grid-cols-12 md:gap-8">
+            <IntroVideo className="md:col-span-7 md:col-start-4" />
           </div>
         </Section>
       );

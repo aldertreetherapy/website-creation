@@ -20,6 +20,24 @@ export const site = {
       width: 1000,
       height: 920,
     },
+    /** Second headshot, used at the top of the About page. */
+    seatedPhoto: {
+      src: "/images/tanya-fridland-lcsw-seated.jpg",
+      alt: "Tanya Fridland, LCSW, seated on a sofa by a sunlit window, smiling",
+      width: 400,
+      height: 400,
+    },
+    /** Short introduction video. */
+    video: {
+      src: "/videos/tanya-fridland-intro.mp4",
+      poster: "/images/tanya-fridland-intro-poster.jpg",
+      width: 640,
+      height: 360,
+      caption: "A quick hello from Tanya (14 seconds)",
+      title: "Meet Tanya Fridland, LCSW",
+      uploadDate: "2026-10-06",
+      duration: "PT14S",
+    },
     education: [
       {
         degree: "Master of Social Work (MSW)",

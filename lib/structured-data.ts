@@ -100,6 +100,21 @@ export function practiceGraph() {
   ];
 }
 
+export function videoGraph() {
+  const v = site.clinician.video;
+  return {
+    "@type": "VideoObject",
+    "@id": `${site.url}/#intro-video`,
+    name: v.title,
+    description: "A short introduction from Tanya Fridland, LCSW, of Alder Tree Therapy.",
+    thumbnailUrl: `${site.url}${v.poster}`,
+    contentUrl: `${site.url}${v.src}`,
+    uploadDate: v.uploadDate,
+    duration: v.duration,
+    publisher: { "@id": ORG_ID },
+  };
+}
+
 export function faqGraph(ids: readonly string[]) {
   const items = ids.map((id) => faqs.find((f) => f.id === id)).filter(Boolean) as (typeof faqs)[number][];
   return {

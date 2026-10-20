@@ -1,5 +1,5 @@
 import { home } from "@/content/site";
-import { faqGraph, jsonLd, practiceGraph } from "@/lib/structured-data";
+import { faqGraph, jsonLd, practiceGraph, videoGraph } from "@/lib/structured-data";
 import { AboutPreview, Approach, Hero, Paths, PracticalDetails, Process, Recognition } from "@/components/home/HomeSections";
 import { ClosingCta, FaqSection, OutOfNetworkSection } from "@/components/sections";
 
@@ -9,7 +9,7 @@ export function HomePage() {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: jsonLd([...practiceGraph(), faqGraph(home.faq.ids)]) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd([...practiceGraph(), videoGraph(), faqGraph(home.faq.ids)]) }}
       />
       <Hero />
       <Recognition />

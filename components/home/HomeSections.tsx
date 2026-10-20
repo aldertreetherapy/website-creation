@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { home, site } from "@/content/site";
-import { AlderBranch } from "@/components/AlderBranch";
+import { IntroVideo } from "@/components/IntroVideo";
 import { Arrow, ArrowLink, BookingButton, Container, Section, SectionHeading } from "@/components/ui";
 
 export function Hero() {
@@ -173,13 +173,8 @@ export function AboutPreview() {
   return (
     <Section labelledBy="about-heading">
       <div className="grid items-start gap-12 md:grid-cols-12 md:gap-8">
-        <figure className="order-2 md:order-1 md:col-span-4 md:col-start-1">
-          <AlderBranch className="mx-auto w-full max-w-[18rem] text-alder" />
-          <figcaption className="mt-4 text-center font-display text-[0.85rem] italic text-ink-muted">
-            {home.hero.figureCaption}
-          </figcaption>
-        </figure>
-        <div className="order-1 md:order-2 md:col-span-7 md:col-start-6">
+        <IntroVideo className="order-2 md:order-1 md:col-span-5 md:col-start-1 md:mt-2" />
+        <div className="order-1 md:order-2 md:col-span-6 md:col-start-7">
           <p className="eyebrow">{a.eyebrow}</p>
           <h2 id="about-heading" className="mt-4 max-w-[20ch] text-h2">
             {a.heading}

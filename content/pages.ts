@@ -11,6 +11,7 @@ export type PageSection =
   | { kind: "quote"; text: string; followUp: string }
   | { kind: "outOfNetwork" }
   | { kind: "credentials"; eyebrow: string; heading: string }
+  | { kind: "video"; eyebrow: string; heading: string }
   | {
       kind: "photos";
       eyebrow: string;
@@ -34,6 +35,8 @@ export type PageContent = {
     portrait?: boolean;
     /** Show the booking button under the heading. Defaults to yes. */
     booking?: boolean;
+    /** Use the seated headshot instead of the main one. */
+    portraitVariant?: "main" | "seated";
   };
   /** Shown under the heading on policy pages, e.g. "October 20, 2026". */
   lastUpdated?: string;
@@ -402,8 +405,10 @@ export const aboutPage: PageContent = {
     heading: "I know the pace, because I’ve kept it.",
     lead:
       "I help adults who feel overwhelmed by the competing demands of work and family, ADHD, anxiety, burnout, or depression. My work is strengths-based and individualized, and it supports both emotional insight and practical change.",
+    portraitVariant: "seated",
   },
   sections: [
+    { kind: "video", eyebrow: "Say hello", heading: "A quick introduction." },
     {
       kind: "prose",
       eyebrow: "Who I work with",
