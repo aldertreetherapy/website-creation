@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { site } from "@/content/site";
 import { builtPages } from "@/content/pages";
+import { articles } from "@/content/articles";
 
 export const dynamic = "force-static";
 
@@ -13,6 +14,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${site.url}${p.slug}`,
       changeFrequency: "monthly" as const,
       priority: legal.has(p.slug) ? 0.3 : 0.8,
+    })),
+    { url: `${site.url}/articles`, changeFrequency: "weekly", priority: 0.7 },
+    ...articles.map((a) => ({
+      url: `${site.url}/articles/${a.slug}`,
+      lastModified: a.published,
+      changeFrequency: "yearly" as const,
+      priority: 0.6,
     })),
   ];
 }

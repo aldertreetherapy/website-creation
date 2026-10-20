@@ -1,5 +1,7 @@
 import { faqs, home, site, outOfNetwork } from "@/content/site";
 import { builtPages } from "@/content/pages";
+import { nyRegions } from "@/content/regions";
+import { articles } from "@/content/articles";
 
 export const dynamic = "force-static";
 
@@ -19,7 +21,7 @@ export function GET() {
     ...c.education.map((e) => `- Education: ${e.degree}, ${e.school}${e.detail ? ` (${e.detail})` : ""}`),
     "- Background: Former BigLaw attorney in New York City",
     `- Format: Individual psychotherapy for adults, by video (telehealth), anywhere in ${site.serviceArea}`,
-    `- Areas served (by telehealth): all of ${site.serviceArea}, including ${site.regions.join("; ")}`,
+    `- Areas served (by telehealth): every county in ${site.serviceArea}. Clients must be located in New York State during sessions.`,
     `- Scheduling: ${site.scheduling}`,
     "- Primary focus: Working parents balancing a demanding career with family; adults with ADHD and executive functioning challenges at work, including those diagnosed in adulthood or exploring whether ADHD fits",
     `- Also works with: ${home.paths.also.replace(/^I also work with /, "").replace(/, which.*$/, "")}`,
@@ -32,9 +34,15 @@ export function GET() {
     `- Questions: ${site.email} (please don’t include health details by email)`,
     "- In a crisis, call or text 988 or call 911. The practice cannot respond to emergencies.",
     "",
+    "## Areas served (all 62 New York counties, by region)",
+    ...nyRegions.map((r) => `- ${r.name}: ${r.counties.join(", ")} (including ${r.places.join(", ")})`),
+    "",
     "## Pages",
     `- [Home](${site.url}/)`,
     ...builtPages.map((p) => `- [${p.seoTitle}](${site.url}${p.slug}): ${p.seoDescription}`),
+    "",
+    "## Articles",
+    ...articles.map((a) => `- [${a.title}](${site.url}/articles/${a.slug}): ${a.description}`),
     "",
     "## Frequently asked questions",
     ...faqs.flatMap((f) => [`### ${f.q}`, f.a, ""]),

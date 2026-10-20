@@ -1,3 +1,4 @@
+import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import type { PageContent, PageSection } from "@/content/pages";
@@ -180,7 +181,10 @@ function SectionRenderer({ section, index, tone }: { section: PageSection; index
           <SectionHeading id={`${id}-heading`} eyebrow={section.eyebrow} heading={section.heading} />
           <div className="mt-10 grid md:grid-cols-12 md:gap-8">
             <figure className="md:col-span-8 md:col-start-4">
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div
+                className="grid items-start gap-4 sm:[grid-template-columns:var(--photo-cols)] md:gap-5"
+                style={{ "--photo-cols": section.images.map((i) => `${(i.width / i.height).toFixed(3)}fr`).join(" ") } as CSSProperties}
+              >
                 {section.images.map((img) => (
                   <Image
                     key={img.src}
@@ -188,7 +192,7 @@ function SectionRenderer({ section, index, tone }: { section: PageSection; index
                     alt={img.alt}
                     width={img.width}
                     height={img.height}
-                    sizes="(min-width: 768px) 22rem, 45vw"
+                    sizes="(min-width: 768px) 30rem, 60vw"
                     className="block h-auto w-full max-w-full"
                   />
                 ))}

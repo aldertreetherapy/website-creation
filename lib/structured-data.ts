@@ -1,5 +1,7 @@
 import { faqs, home, site } from "@/content/site";
 import type { PageContent } from "@/content/pages";
+import { nyCounties } from "@/content/regions";
+import type { Article } from "@/content/articles";
 
 /**
  * Structured data (JSON-LD) tells search engines and AI assistants, in a
@@ -30,12 +32,15 @@ export function practiceGraph() {
       description: site.description,
       image: `${site.url}${site.clinician.headshot.src}`,
       founder: { "@id": PERSON_ID },
+      sameAs: [...site.profiles],
       employee: { "@id": PERSON_ID },
       areaServed: [
         { "@type": "State", name: "New York", containedInPlace: { "@type": "Country", name: "United States" } },
-        ...["New York City", "Long Island", "Westchester County", "Hudson Valley", "Albany", "Syracuse", "Rochester", "Buffalo"].map(
-          (name) => ({ "@type": "Place", name, containedInPlace: { "@type": "State", name: "New York" } }),
-        ),
+        ...nyCounties.map((c) => ({
+          "@type": "AdministrativeArea",
+          name: `${c} County, New York`,
+          containedInPlace: { "@type": "State", name: "New York" },
+        })),
       ],
       medicalSpecialty: "Psychiatric",
       knowsAbout: [
@@ -79,6 +84,7 @@ export function practiceGraph() {
       jobTitle: site.clinician.title,
       image: `${site.url}${site.clinician.headshot.src}`,
       worksFor: { "@id": ORG_ID },
+      sameAs: [...site.profiles],
       alumniOf: site.clinician.education.map((e) => ({ "@type": "CollegeOrUniversity", name: e.school })),
       hasCredential: [
         {
@@ -155,6 +161,40 @@ export function pageGraph(page: PageContent) {
   const faqIds = page.sections.flatMap((s) => (s.kind === "faq" ? s.ids : []));
   if (faqIds.length) graph.push(faqGraph(faqIds));
   return graph;
+}
+
+export function articleGraph(a: Article) {
+  const url = `${site.url}/articles/${a.slug}`;
+  return [
+    {
+      "@type": "BlogPosting",
+      "@id": `${url}#article`,
+      headline: a.title,
+      description: a.description,
+      datePublished: a.published,
+      dateModified: a.published,
+      url,
+      mainEntityOfPage: url,
+      image: `${site.url}/images/og-alder-tree-therapy.jpg`,
+      author: {
+        "@type": "Person",
+        "@id": PERSON_ID,
+        name: site.clinician.name,
+        honorificSuffix: site.clinician.credentials,
+        url: `${site.url}/about`,
+      },
+      publisher: { "@id": ORG_ID, "@type": "Organization", name: site.legalName },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+        { "@type": "ListItem", position: 2, name: "Articles", item: `${site.url}/articles` },
+        { "@type": "ListItem", position: 3, name: a.title, item: url },
+      ],
+    },
+  ];
 }
 
 export function jsonLd(graph: object[]) {

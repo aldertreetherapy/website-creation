@@ -229,6 +229,11 @@ export function PracticalDetails() {
           </div>
         ))}
       </dl>
+      <div className="grid pt-8 md:grid-cols-12 md:gap-8">
+        <ArrowLink href={d.link.href} className="md:col-span-6 md:col-start-4">
+          {d.link.label}
+        </ArrowLink>
+      </div>
     </Section>
   );
 }

@@ -3,6 +3,7 @@
  * Each page is a list of sections. Edit the text between the quotation marks.
  */
 import type { FaqId } from "./site";
+import { nyRegions } from "./regions";
 
 export type PageSection =
   | { kind: "prose"; eyebrow: string; heading: string; paragraphs: string[] }
@@ -445,16 +446,16 @@ export const aboutPage: PageContent = {
         "One supervises from the top of the cat tree. The other handles building security. Neither has ever shown up on time to a meeting, but they make excellent company on long days.",
       images: [
         {
-          src: "/images/officemate-tabby.jpg",
+          src: "/images/officemate-tabby-full.jpg",
           alt: "Tanya’s tabby cat lounging on a cat tree, gazing upward",
-          width: 800,
-          height: 1000,
+          width: 1200,
+          height: 900,
         },
         {
-          src: "/images/officemate-black-cat.jpg",
+          src: "/images/officemate-black-cat-full.jpg",
           alt: "Tanya’s black cat with yellow eyes peering through stair railings",
-          width: 800,
-          height: 1000,
+          width: 900,
+          height: 1200,
         },
       ],
     },
@@ -645,6 +646,51 @@ export const accessibilityPage: PageContent = {
   ],
 };
 
+export const areasPage: PageContent = {
+  slug: "/areas-served",
+  seoTitle: "Telehealth Therapy Anywhere in New York State",
+  seoDescription:
+    "Tanya Fridland, LCSW, provides telehealth therapy to adults in every county of New York State, from New York City, Long Island and Westchester to Albany, Syracuse, Rochester, Buffalo and the North Country.",
+  breadcrumb: "Areas Served",
+  hero: {
+    eyebrow: "Areas served",
+    heading: "Therapy by video, anywhere in New York State.",
+    lead:
+      "Because sessions are held by secure video, I can work with adults located anywhere in New York State: all ten regions and all 62 counties. If you’re in New York when we meet, you’re covered.",
+  },
+  sections: [
+    {
+      kind: "pairs",
+      eyebrow: "Every region",
+      heading: "All 62 counties, all ten regions.",
+      intro: "Find your region below. Each one lists its counties and some of the cities and towns where my clients live and work.",
+      items: nyRegions.map((r) => ({
+        title: r.name,
+        body: `Counties: ${r.counties.join(", ")}. Including ${r.places.join(", ")}.`,
+      })),
+    },
+    {
+      kind: "prose",
+      eyebrow: "How it works",
+      heading: "No commute, wherever you are.",
+      paragraphs: [
+        "Sessions take place over secure video, so you can meet from your home, a quiet office, or a parked car between commitments. All you need is a private space and a reliable connection.",
+        "The one requirement is location: you need to be physically in New York State during our sessions, because that’s where I’m licensed.",
+      ],
+    },
+    {
+      kind: "faq",
+      eyebrow: "Questions",
+      heading: "Questions about telehealth.",
+      ids: ["virtual", "scheduling", "insurance"],
+    },
+  ],
+  closing: {
+    heading: "Wherever you are in New York.",
+    body: "Book a free consultation and we’ll see whether working together is a good fit.",
+  },
+};
+
 /** Every page built from this file, in the order they appear in the sitemap. */
 export const builtPages = [
   parentsPage,
@@ -655,5 +701,6 @@ export const builtPages = [
   faqPage,
   bookPage,
   cliniciansPage,
+  areasPage,
   accessibilityPage,
 ];

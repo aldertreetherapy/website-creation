@@ -52,15 +52,14 @@ export const site = {
   bookingLabel: "Book a free consultation",
   email: "tanya@aldertreetherapy.com",
   serviceArea: "New York State",
-  /** Regions named so people (and AI assistants) searching locally can see they’re covered. */
-  regions: [
-    "New York City (Manhattan, Brooklyn, Queens, the Bronx, Staten Island)",
-    "Long Island",
-    "Westchester and the Hudson Valley",
-    "the Capital Region",
-    "Central New York",
-    "Rochester and the Finger Lakes",
-    "Buffalo and Western New York",
+  /**
+   * Tanya's profiles on other sites. Search engines and AI tools use these to
+   * confirm that all of these listings describe the same person and practice.
+   * Add a new profile link on its own line, in quotes, followed by a comma.
+   */
+  profiles: [
+    "https://www.therapyden.com/therapist/tanya-fridland-scarsdale-ny",
+    "https://www.carenyc.org/10024/tanya-fridland-new-york-lcsw",
   ],
   scheduling: "Flexible rescheduling on short notice.",
   description:
@@ -73,6 +72,7 @@ export const nav = [
   { label: "Approach", href: "/approach" },
   { label: "About", href: "/about" },
   { label: "Insurance", href: "/insurance" },
+  { label: "Articles", href: "/articles" },
   { label: "FAQ", href: "/faq" },
 ] as const;
 
@@ -233,7 +233,7 @@ export const home = {
       {
         term: "Where",
         detail:
-          "Clients located anywhere in New York State, including New York City, Long Island, Westchester, the Hudson Valley, the Capital Region, Central New York, Rochester, and Buffalo.",
+          "Clients located anywhere in New York State: every region and all 62 counties, from New York City and Long Island to the Hudson Valley, the Capital Region, the North Country, Central New York, the Southern Tier, the Finger Lakes, and Western New York.",
       },
       { term: "Scheduling", detail: "Flexible rescheduling, even on short notice." },
       {
@@ -242,6 +242,7 @@ export const home = {
           "Out-of-network. I provide superbills for reimbursement and can help you verify your out-of-network benefits.",
       },
     ],
+    link: { label: "See all areas served", href: "/areas-served" },
   },
 
   faq: {
@@ -345,6 +346,7 @@ export const footer = {
   emailNote: "Please don’t include health details by email. We can discuss them in session.",
   extraLinks: [
     { label: "Book a consultation", href: "/book" },
+    { label: "Areas served", href: "/areas-served" },
     { label: "For clinicians", href: "/for-clinicians" },
   ],
   legalLinks: [

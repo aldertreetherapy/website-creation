@@ -14,6 +14,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { HomePage } from "@/components/HomePage";
 import { ContentPage } from "@/components/ContentPage";
 import { builtPages } from "@/content/pages";
+import { articles } from "@/content/articles";
+import { ArticleView } from "@/components/ArticleView";
+import ArticlesIndex from "@/app/articles/page";
 import { site } from "@/content/site";
 
 const ROOT = path.resolve(__dirname, "..");
@@ -50,7 +53,7 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link 
 (async () => {
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(path.join(OUT, "images"), { recursive: true });
-  fs.copyFileSync(path.join(ROOT, "public/images/tanya-fridland-lcsw-portrait.webp"), path.join(OUT, "images/tanya-fridland-lcsw-portrait.webp"));
+  for (const f of fs.readdirSync(path.join(ROOT, "public/images"))) fs.copyFileSync(path.join(ROOT, "public/images", f), path.join(OUT, "images", f));
   imageMap[site.clinician.headshot.src] = "images/tanya-fridland-lcsw-portrait.webp";
 
   const pages = [
@@ -60,6 +63,8 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link 
       title: `${p.seoTitle} | Alder Tree Therapy`,
       body: shell(<ContentPage page={p} />),
     })),
+    { file: "articles.html", title: "Articles | Alder Tree Therapy", body: shell(<ArticlesIndex />) },
+    ...articles.map((a) => ({ file: `article-${a.slug}.html`, title: `${a.title} | Alder Tree Therapy`, body: shell(<ArticleView article={a} />) })),
   ];
   const css = await buildCss(pages.map((p) => p.body).join("\n"));
 

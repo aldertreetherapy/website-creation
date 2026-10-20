@@ -1,8 +1,11 @@
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 import { builtPages } from "@/content/pages";
+import { articles } from "@/content/articles";
 // Preview-only stand-in for next/link. Built pages map to their .html files.
 const BUILT: Record<string, string> = { "/": "./" };
 for (const p of builtPages) BUILT[p.slug] = p.slug.slice(1) + ".html";
+BUILT["/articles"] = "articles.html";
+for (const a of articles) BUILT[`/articles/${a.slug}`] = `article-${a.slug}.html`;
 export function previewHref(href: string) {
   if (!href.startsWith("/")) return href;
   if (href.startsWith("/#")) return "./" + href.slice(1);
