@@ -21,6 +21,7 @@ Nearly all text lives in two files. Open one, change the words between the quota
 | `lib/structured-data.ts` | Search-engine data (schema.org) built from `content/site.ts` |
 | `public/images/` | Headshot and the image shown when the site is shared |
 | `app/llms.txt/route.ts` | Builds /llms.txt, a plain-text summary for AI assistants, from the content files |
+| `functions/_middleware.js` | Redirects aldertreetherapy.com to www.aldertreetherapy.com |
 | `next.config.ts` | Tells Next.js to export plain static files for Cloudflare Pages |
 | `preview/` | Tool used only to make design previews; not part of the live site |
 
