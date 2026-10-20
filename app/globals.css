@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/*
+  Design tokens: the whole palette and type system live here.
+  Layout concept: an editorial page with a wide left margin of labels,
+  content set to a reading measure, and one botanical drawing as the image.
+*/
+@theme {
+  --color-paper: #f3f3ee;       /* page background, a faintly green paper */
+  --color-linen: #e7e9e0;       /* alternating sections */
+  --color-ink: #1d2521;         /* body text */
+  --color-ink-muted: #4d5852;   /* secondary text */
+  --color-alder: #2e4a3d;       /* brand green: buttons, headings */
+  --color-alder-deep: #20362c;  /* button hover, closing band */
+  --color-wood: #9a4f30;        /* cut alder wood: small accents only */
+  --color-line: #c9cfc3;        /* hairlines */
+  --color-leaf: #dfe5d5;        /* leaf fill in the drawing */
+  --color-on-alder: #f3f3ee;
+  --color-on-alder-muted: #c4d0c7;
+
+  --font-display: var(--font-newsreader), "Iowan Old Style", Georgia, serif;
+  --font-sans: var(--font-hanken), "Helvetica Neue", Arial, sans-serif;
+
+  --text-display: clamp(2.5rem, 1.6rem + 3.6vw, 4.5rem);
+  --text-display--line-height: 1.04;
+  --text-h2: clamp(1.9rem, 1.45rem + 1.8vw, 2.9rem);
+  --text-h2--line-height: 1.1;
+  --text-h3: 1.375rem;
+  --text-h3--line-height: 1.25;
+  --text-lead: clamp(1.125rem, 1.05rem + 0.3vw, 1.3rem);
+  --text-lead--line-height: 1.6;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+    color: var(--color-alder-deep);
+  }
+  p { text-wrap: pretty; }
+  ::selection { background: var(--color-leaf); color: var(--color-ink); }
+  :focus-visible {
+    outline: 2px solid var(--color-wood);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  /* Side gutter that also clears a phone's safe areas */
+  .gutter {
+    padding-left: max(1.25rem, env(safe-area-inset-left, 0px));
+    padding-right: max(1.25rem, env(safe-area-inset-right, 0px));
+  }
+  @media (min-width: 768px) {
+    .gutter {
+      padding-left: max(2.5rem, env(safe-area-inset-left, 0px));
+      padding-right: max(2.5rem, env(safe-area-inset-right, 0px));
+    }
+  }
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-wood);
+  }
+  .link-underline {
+    text-decoration-line: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.3em;
+    text-decoration-color: var(--color-line);
+    transition: text-decoration-color 150ms;
+  }
+  .link-underline:hover { text-decoration-color: currentColor; }
+}

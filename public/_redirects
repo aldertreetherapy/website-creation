@@ -1,0 +1,10 @@
+# Old Google Sites addresses forward permanently to their new pages,
+# so existing links and search rankings keep working.
+/home          /                  301
+/adhd          /adhd-therapy      301
+/life-balance  /working-parents   301
+/anxiety       /approach          301
+/depression    /approach          301
+/faqs          /faq               301
+/contact       /book              301
+/fees          /insurance         301

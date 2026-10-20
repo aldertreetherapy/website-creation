@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "baseUrl": "..",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "next/link": [
+        "./preview/shims/link.tsx"
+      ],
+      "next/image": [
+        "./preview/shims/image.tsx"
+      ]
+    }
+  },
+  "include": [
+    "./shims/*.ts",
+    "./shims/*.tsx",
+    "./build.tsx",
+    "../app/**/*.ts",
+    "../app/**/*.tsx",
+    "../components/**/*.tsx",
+    "../content/*.ts",
+    "../lib/*.ts"
+  ]
+}
