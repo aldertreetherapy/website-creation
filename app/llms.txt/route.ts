@@ -19,6 +19,7 @@ export function GET() {
     ...c.education.map((e) => `- Education: ${e.degree}, ${e.school}${e.detail ? ` (${e.detail})` : ""}`),
     "- Background: Former BigLaw attorney in New York City",
     `- Format: Individual psychotherapy for adults, by video (telehealth), anywhere in ${site.serviceArea}`,
+    `- Areas served (by telehealth): all of ${site.serviceArea}, including ${site.regions.join("; ")}`,
     `- Scheduling: ${site.scheduling}`,
     "- Primary focus: Working parents balancing a demanding career with family; adults with ADHD and executive functioning challenges at work, including those diagnosed in adulthood or exploring whether ADHD fits",
     `- Also works with: ${home.paths.also.replace(/^I also work with /, "").replace(/, which.*$/, "")}`,

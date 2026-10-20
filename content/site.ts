@@ -52,6 +52,16 @@ export const site = {
   bookingLabel: "Book a free consultation",
   email: "tanya@aldertreetherapy.com",
   serviceArea: "New York State",
+  /** Regions named so people (and AI assistants) searching locally can see they’re covered. */
+  regions: [
+    "New York City (Manhattan, Brooklyn, Queens, the Bronx, Staten Island)",
+    "Long Island",
+    "Westchester and the Hudson Valley",
+    "the Capital Region",
+    "Central New York",
+    "Rochester and the Finger Lakes",
+    "Buffalo and Western New York",
+  ],
   scheduling: "Flexible rescheduling on short notice.",
   description:
     "Telehealth therapy across New York State for working parents in demanding careers and professionals with ADHD, including anxiety, depression, and burnout. Tanya Fridland, LCSW, is a former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia.",
@@ -220,7 +230,11 @@ export const home = {
     heading: "What to know before you book.",
     items: [
       { term: "Format", detail: "Individual psychotherapy for adults, by video." },
-      { term: "Where", detail: "Clients located anywhere in New York State." },
+      {
+        term: "Where",
+        detail:
+          "Clients located anywhere in New York State, including New York City, Long Island, Westchester, the Hudson Valley, the Capital Region, Central New York, Rochester, and Buffalo.",
+      },
       { term: "Scheduling", detail: "Flexible rescheduling, even on short notice." },
       {
         term: "Insurance",

@@ -31,11 +31,12 @@ export function practiceGraph() {
       image: `${site.url}${site.clinician.headshot.src}`,
       founder: { "@id": PERSON_ID },
       employee: { "@id": PERSON_ID },
-      areaServed: {
-        "@type": "State",
-        name: "New York",
-        containedInPlace: { "@type": "Country", name: "United States" },
-      },
+      areaServed: [
+        { "@type": "State", name: "New York", containedInPlace: { "@type": "Country", name: "United States" } },
+        ...["New York City", "Long Island", "Westchester County", "Hudson Valley", "Albany", "Syracuse", "Rochester", "Buffalo"].map(
+          (name) => ({ "@type": "Place", name, containedInPlace: { "@type": "State", name: "New York" } }),
+        ),
+      ],
       medicalSpecialty: "Psychiatric",
       knowsAbout: [
         "Working parents",
