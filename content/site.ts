@@ -17,8 +17,8 @@ export const site = {
     headshot: {
       src: "/images/tanya-fridland-lcsw.jpg",
       alt: "Tanya Fridland, LCSW, smiling, in a navy sweater beside a sunlit window",
-      width: 800,
-      height: 1000,
+      width: 1000,
+      height: 920,
     },
     education: [
       {

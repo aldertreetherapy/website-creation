@@ -40,7 +40,7 @@ export function Hero() {
               height={shot.height}
               priority
               sizes="(min-width: 1024px) 26rem, 22rem"
-              className="relative block aspect-[4/5] h-auto w-full max-w-full object-cover"
+              className="relative block h-auto w-full max-w-full"
             />
           </div>
           <figcaption className="mt-6 text-[0.9rem] leading-relaxed text-ink-muted">

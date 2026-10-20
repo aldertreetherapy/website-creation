@@ -81,7 +81,7 @@ function PageHero({ page }: { page: PageContent }) {
               width={shot.width}
               height={shot.height}
               sizes="(min-width: 1024px) 14rem, 6rem"
-              className="block aspect-[4/5] h-auto w-24 max-w-full object-cover lg:w-56"
+              className="block h-auto w-28 max-w-full lg:w-64"
             />
             <figcaption className="text-[0.9rem] leading-relaxed text-ink-muted">
               <span className="font-semibold text-ink">
