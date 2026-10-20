@@ -4,7 +4,8 @@ Built with Next.js, TypeScript and Tailwind CSS.
 
 ## Changing the words on the site
 Nearly all text lives in two files. Open one, change the words between the quotation marks, and save.
-- **`content/site.ts`**: homepage, menu, FAQs, insurance steps, credentials, email and booking link
+- **`content/site.ts`**: homepage, menu, FAQs, insurance steps, credentials, email, booking link, and the availability line AI agents see
+- **`content/articles.ts`**: the articles
 - **`content/pages.ts`**: every other page (Working Parents, ADHD, Approach, About, Insurance, FAQ, Book, For Clinicians, Accessibility)
 
 ## Where things are
@@ -22,6 +23,10 @@ Nearly all text lives in two files. Open one, change the words between the quota
 | `public/images/` | Headshot and the image shown when the site is shared |
 | `app/llms.txt/route.ts` | Builds /llms.txt, a plain-text summary for AI assistants, from the content files |
 | `app/robots.txt/route.ts` | Builds /robots.txt, welcoming search engines and AI assistants |
+| `app/agent-info.json/route.ts` | Builds /agent-info.json, structured practice facts for AI agents |
+| `functions/mcp.js` | Read-only MCP connector at /mcp: availability, booking link, service area, FAQs |
+| `content/articles.ts` | The articles |
+| `content/regions.ts` | All New York regions and counties served |
 | `functions/_middleware.js` | Redirects aldertreetherapy.com to www.aldertreetherapy.com |
 | `next.config.ts` | Tells Next.js to export plain static files for Cloudflare Pages |
 | `preview/` | Tool used only to make design previews; not part of the live site |

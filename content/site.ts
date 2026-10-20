@@ -62,6 +62,14 @@ export const site = {
     "https://www.carenyc.org/10024/tanya-fridland-new-york-lcsw",
   ],
   scheduling: "Flexible rescheduling on short notice.",
+  /**
+   * What AI assistants are told about availability. Update this line whenever it changes.
+   * Live openings are always on the Jane booking page.
+   */
+  availability: {
+    acceptingNewClients: true,
+    summary: "Accepting new clients. Free consultations can be booked online, and current openings are shown live on the booking page.",
+  },
   description:
     "Telehealth therapy across New York State for working parents in demanding careers and professionals with ADHD, including anxiety, depression, and burnout. Tanya Fridland, LCSW, is a former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia.",
 } as const;
