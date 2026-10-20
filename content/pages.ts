@@ -11,6 +11,13 @@ export type PageSection =
   | { kind: "quote"; text: string; followUp: string }
   | { kind: "outOfNetwork" }
   | { kind: "credentials"; eyebrow: string; heading: string }
+  | {
+      kind: "photos";
+      eyebrow: string;
+      heading: string;
+      caption: string;
+      images: { src: string; alt: string; width: number; height: number }[];
+    }
   | { kind: "contact"; eyebrow: string; heading: string; intro: string; note: string }
   | { kind: "faq"; eyebrow: string; heading: string; ids: FaqId[] };
 
@@ -423,6 +430,27 @@ export const aboutPage: PageContent = {
       paragraphs: [
         "I strive to practice with cultural humility, and I recognize that each person’s identity and lived experiences shape how they move through the world. As a white, cisgender, heterosexual Jewish woman and immigrant, I also understand that my own experiences influence the therapeutic relationship.",
         "I’m committed to creating a space where you feel respected, understood, and empowered to bring your whole self into therapy.",
+      ],
+    },
+    {
+      kind: "photos",
+      eyebrow: "My officemates",
+      heading: "The rest of the team.",
+      caption:
+        "One supervises from the top of the cat tree. The other handles building security. Neither has ever shown up on time to a meeting, but they make excellent company on long days.",
+      images: [
+        {
+          src: "/images/officemate-tabby.jpg",
+          alt: "Tanya’s tabby cat lounging on a cat tree, gazing upward",
+          width: 800,
+          height: 1000,
+        },
+        {
+          src: "/images/officemate-black-cat.jpg",
+          alt: "Tanya’s black cat with yellow eyes peering through stair railings",
+          width: 800,
+          height: 1000,
+        },
       ],
     },
     {

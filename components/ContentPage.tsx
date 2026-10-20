@@ -173,6 +173,32 @@ function SectionRenderer({ section, index, tone }: { section: PageSection; index
           </div>
         </Section>
       );
+    case "photos":
+      return (
+        <Section tone={tone} labelledBy={`${id}-heading`}>
+          <SectionHeading id={`${id}-heading`} eyebrow={section.eyebrow} heading={section.heading} />
+          <div className="mt-10 grid md:grid-cols-12 md:gap-8">
+            <figure className="md:col-span-8 md:col-start-4">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
+                {section.images.map((img) => (
+                  <Image
+                    key={img.src}
+                    src={img.src}
+                    alt={img.alt}
+                    width={img.width}
+                    height={img.height}
+                    sizes="(min-width: 768px) 22rem, 45vw"
+                    className="block h-auto w-full max-w-full"
+                  />
+                ))}
+              </div>
+              <figcaption className="mt-5 max-w-[56ch] font-display text-[1.15rem] italic leading-snug text-ink-muted">
+                {section.caption}
+              </figcaption>
+            </figure>
+          </div>
+        </Section>
+      );
     case "contact":
       return (
         <Section tone={tone} labelledBy={`${id}-heading`}>
