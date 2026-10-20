@@ -50,8 +50,8 @@ const FONTS = `<link rel="preconnect" href="https://fonts.googleapis.com"><link 
 (async () => {
   fs.rmSync(OUT, { recursive: true, force: true });
   fs.mkdirSync(path.join(OUT, "images"), { recursive: true });
-  fs.copyFileSync(path.join(ROOT, "public/images/tanya-fridland-lcsw.webp"), path.join(OUT, "images/tanya-fridland-lcsw.webp"));
-  imageMap[site.clinician.headshot.src] = "images/tanya-fridland-lcsw.webp";
+  fs.copyFileSync(path.join(ROOT, "public/images/tanya-fridland-lcsw-portrait.webp"), path.join(OUT, "images/tanya-fridland-lcsw-portrait.webp"));
+  imageMap[site.clinician.headshot.src] = "images/tanya-fridland-lcsw-portrait.webp";
 
   const pages = [
     { file: "index.html", title: "Alder Tree Therapy", body: shell(<HomePage />) },

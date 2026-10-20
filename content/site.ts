@@ -15,7 +15,7 @@ export const site = {
     title: "Licensed Clinical Social Worker",
     licenseState: "New York",
     headshot: {
-      src: "/images/tanya-fridland-lcsw.jpg",
+      src: "/images/tanya-fridland-lcsw-portrait.jpg",
       alt: "Tanya Fridland, LCSW, smiling, in a navy sweater beside a sunlit window",
       width: 1000,
       height: 920,
