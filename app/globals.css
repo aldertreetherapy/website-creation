@@ -92,3 +92,15 @@
   }
   .link-underline:hover { text-decoration-color: currentColor; }
 }
+
+/* Pride-flag easter egg: the cat's tail swish and walking legs */
+@keyframes cat-swish { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(-14deg); } }
+@keyframes cat-step { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-2px); } }
+@keyframes cat-peek-in { from { opacity: 0; translate: 0 12px; } to { opacity: 1; translate: 0 0; } }
+.cat-tail { transform-origin: 12px 30px; animation: cat-swish 1.6s ease-in-out infinite; }
+.cat-walk .cat-legs rect:nth-child(odd) { animation: cat-step 0.32s ease-in-out infinite; }
+.cat-walk .cat-legs rect:nth-child(even) { animation: cat-step 0.32s ease-in-out infinite 0.16s; }
+.cat-peek { animation: cat-peek-in 0.4s ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .cat-tail, .cat-walk .cat-legs rect { animation: none; }
+}

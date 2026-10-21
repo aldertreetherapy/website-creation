@@ -45,6 +45,7 @@ export const site = {
         detail: "Advanced Clinical Social Work Practice",
       },
       { degree: "Juris Doctor (JD)", school: "Harvard Law School", detail: "" },
+      { degree: "Bachelor of Arts (BA)", school: "Yale University", detail: "" },
     ],
   },
   url: "https://www.aldertreetherapy.com",
@@ -352,6 +353,7 @@ export const footer = {
   crisis:
     "If you are in crisis or thinking about harming yourself, call or text 988 to reach the 988 Suicide & Crisis Lifeline, or call 911. This practice can’t respond to emergencies.",
   emailNote: "Please don’t include health details by email. We can discuss them in session.",
+  affirming: "LGBTQIA+ affirming. All identities are welcome here.",
   extraLinks: [
     { label: "Book a consultation", href: "/book" },
     { label: "Areas served", href: "/areas-served" },

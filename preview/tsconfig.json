@@ -22,6 +22,9 @@
       ],
       "next/image": [
         "./preview/shims/image.tsx"
+      ],
+      "next/navigation": [
+        "./preview/shims/navigation.tsx"
       ]
     }
   },

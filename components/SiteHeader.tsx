@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { nav, site } from "@/content/site";
 import { BookingButton, Container } from "@/components/ui";
+import { MobileMenu } from "@/components/MobileMenu";
 
 export function Wordmark() {
   return (
@@ -43,27 +44,7 @@ export function SiteHeader() {
           <BookingButton label="Book a free consultation" className="!px-5 !py-3 text-[0.92rem]" />
         </div>
 
-        {/* Mobile menu: a native disclosure, so it works without JavaScript */}
-        <details className="group relative xl:hidden">
-          <summary className="flex cursor-pointer list-none items-center gap-2 rounded-[3px] border border-line px-4 py-2.5 text-[0.95rem] font-semibold text-alder-deep [&::-webkit-details-marker]:hidden">
-            <span className="group-open:hidden">Menu</span>
-            <span className="hidden group-open:inline">Close</span>
-          </summary>
-          <div className="absolute right-0 top-[calc(100%+0.75rem)] z-40 w-[min(20rem,calc(100vw-2.5rem))] border border-line bg-paper p-6 shadow-[0_18px_40px_-20px_rgba(29,37,33,0.35)]">
-            <nav aria-label="Mobile">
-              <ul className="flex flex-col gap-4 text-[1.05rem]">
-                {nav.map((item) => (
-                  <li key={item.href}>
-                    <Link href={item.href} className="text-ink">
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <BookingButton className="mt-6 w-full" />
-          </div>
-        </details>
+        <MobileMenu />
       </Container>
     </header>
   );

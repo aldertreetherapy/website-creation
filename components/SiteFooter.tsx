@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { footer, nav, site } from "@/content/site";
 import { Container } from "@/components/ui";
+import { PrideFlag } from "@/components/PrideFlag";
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -26,6 +27,10 @@ export function SiteFooter() {
             </a>
           </p>
           <p className="mt-2 max-w-[40ch] text-[0.85rem] text-ink-muted">{footer.emailNote}</p>
+          <div className="mt-6 flex items-center gap-3 text-[0.92rem] text-ink">
+            <PrideFlag />
+            <span>{footer.affirming}</span>
+          </div>
         </div>
 
         <nav aria-label="Footer" className="md:col-span-3">
