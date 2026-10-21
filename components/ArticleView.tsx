@@ -32,7 +32,7 @@ export function ArticleView({ article }: { article: Article }) {
               <div className="mt-8 flex items-center gap-4 border-y border-line py-4">
                 <Image src={shot.src} alt="" width={shot.width} height={shot.height} className="h-12 w-12 rounded-full object-cover" />
                 <p className="text-[0.92rem] leading-snug text-ink-muted">
-                  <span className="font-semibold text-ink">{site.clinician.name}, {site.clinician.credentials}</span>
+                  <span className="font-semibold text-ink">{site.clinician.name}, {site.clinician.credentials}</span> ({site.clinician.pronouns})
                   <br />
                   <time dateTime={article.published}>{formatDate(article.published)}</time> · {article.readingMinutes} min read
                 </p>

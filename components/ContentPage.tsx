@@ -87,7 +87,8 @@ function PageHero({ page }: { page: PageContent }) {
             />
             <figcaption className="text-[0.9rem] leading-relaxed text-ink-muted">
               <span className="font-semibold text-ink">
-                {site.clinician.name}, {site.clinician.credentials}
+                {site.clinician.name}, {site.clinician.credentials}{" "}
+              <span className="font-normal text-ink-muted">({site.clinician.pronouns})</span>
               </span>
               <br />
               {home.hero.credentialLine}

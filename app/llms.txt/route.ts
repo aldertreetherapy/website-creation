@@ -17,7 +17,7 @@ export function GET() {
     `> ${site.legalName} is the private psychotherapy practice of ${c.name}, ${c.credentials}, a ${c.licenseState} licensed clinical social worker and former BigLaw attorney. She provides individual telehealth psychotherapy to adults located anywhere in ${site.serviceArea}, focusing on working parents in demanding careers and professionals with ADHD.`,
     "",
     "## Key facts",
-    `- Clinician: ${c.name}, ${c.credentials} (${c.title}, ${c.licenseState} State)`,
+    `- Clinician: ${c.name}, ${c.credentials} (${c.title}, ${c.licenseState} State); pronouns ${c.pronouns}`,
     ...c.education.map((e) => `- Education: ${e.degree}, ${e.school}${e.detail ? ` (${e.detail})` : ""}`),
     "- Background: Former BigLaw attorney in New York City",
     `- Format: Individual psychotherapy for adults, by video (telehealth), anywhere in ${site.serviceArea}`,

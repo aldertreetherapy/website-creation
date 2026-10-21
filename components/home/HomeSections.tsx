@@ -45,7 +45,8 @@ export function Hero() {
           </div>
           <figcaption className="mt-6 text-[0.9rem] leading-relaxed text-ink-muted">
             <span className="font-semibold text-ink">
-              {site.clinician.name}, {site.clinician.credentials}
+              {site.clinician.name}, {site.clinician.credentials}{" "}
+              <span className="font-normal text-ink-muted">({site.clinician.pronouns})</span>
             </span>
             <br />
             {h.credentialLine}

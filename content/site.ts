@@ -11,6 +11,7 @@ export const site = {
   legalName: "Alder Tree Therapy LCSW PLLC",
   clinician: {
     name: "Tanya Fridland",
+    pronouns: "she/her",
     credentials: "LCSW",
     title: "Licensed Clinical Social Worker",
     licenseState: "New York",
