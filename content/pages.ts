@@ -397,7 +397,7 @@ export const approachPage: PageContent = {
 
 export const aboutPage: PageContent = {
   slug: "/about",
-  seoTitle: "About Tanya Fridland, LCSW",
+  seoTitle: "About Tanya Fridland, LCSW: Therapist and Former BigLaw Attorney",
   seoDescription:
     "Tanya Fridland, LCSW, is a New York therapist and former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia, working with working parents and adults with ADHD.",
   breadcrumb: "About",

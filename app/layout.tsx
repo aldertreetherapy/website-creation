@@ -15,7 +15,7 @@ const newsreader = Newsreader({
 });
 const hanken = Hanken_Grotesk({ subsets: ["latin"], variable: "--font-hanken", display: "swap" });
 
-const title = "Therapy for Working Parents & Professionals with ADHD in New York | Alder Tree Therapy";
+const title = "Tanya Fridland, LCSW | Therapy for Working Parents & ADHD in New York | Alder Tree Therapy";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
