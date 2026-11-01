@@ -124,7 +124,8 @@ export function Approach() {
       <div className="mt-10 grid md:grid-cols-12 md:gap-8">
         <p className="max-w-[60ch] text-lead text-ink-muted md:col-span-8 md:col-start-4">{a.lead}</p>
       </div>
-      <div className="mt-14 grid md:grid-cols-12 md:gap-8">
+      <div className="mt-12 grid md:grid-cols-12 md:gap-8">
+        <p className="mb-8 font-semibold text-ink md:col-span-9 md:col-start-4">{a.methodsIntro}</p>
         <dl className="grid gap-x-12 gap-y-10 md:col-span-9 md:col-start-4 md:grid-cols-2">
           {a.methods.map((m) => (
             <div key={m.abbr} className="min-w-0 border-t border-line pt-5">

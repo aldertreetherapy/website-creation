@@ -169,35 +169,34 @@ export const home = {
 
   approach: {
     eyebrow: "My approach",
-    heading: "Insight and strategy, in the same room.",
+    heading: "I offer solutions alongside empathy.",
     lead:
-      "Some therapy helps you understand yourself. Some gives you tools. Most people need both. Our work is collaborative and practical: we make sense of what’s happening, then build something you can use between sessions.",
+      "Many of my clients have found that talk therapy alone isn’t enough. Finding validation and empathy in another human is invaluable. But, it’s only half the battle. We will also discuss coping strategies, emotional regulation and distress tolerance skills, executive functioning tools, and other creative solutions.",
+    methodsIntro: "Modalities I draw from include:",
     methods: [
       {
         name: "Cognitive Behavioral Therapy",
         abbr: "CBT",
-        plain: "Noticing the thoughts and habits that keep you stuck, and trying out better ones.",
+        plain:
+          "You logically know your emotions don’t match reality–you catastrophize, your thinking is all-or-nothing, you overgeneralize–but you can’t seem to stop. We’ll work to change your thoughts, actions, and feelings.",
       },
       {
         name: "Acceptance and Commitment Therapy",
         abbr: "ACT",
-        plain: "Making room for hard feelings while still acting on what matters to you.",
+        plain:
+          "Sometimes your thinking isn’t distorted. Sometimes, the reality just sucks. We’ll work to help you deal with tough times.",
       },
       {
-        name: "Motivational Interviewing",
-        abbr: "MI",
-        plain: "Working through mixed feelings about change, so the next step feels like your choice.",
-      },
-      {
-        name: "Solution-Focused Therapy",
+        name: "Solution-Focused Brief Therapy",
         abbr: "SFBT",
-        plain: "Starting from what already works in your life and building on it.",
+        plain:
+          "Especially if you have ADHD, sometimes you need some short-term wins to help propel you to your long-term goals. You can’t learn to swim while you’re actively drowning. We’ll discuss the rescue first and then we’ll build on that momentum.",
       },
       {
-        name: "Executive functioning strategies",
+        name: "Executive Functioning Strategies for ADHD",
         abbr: "EF",
         plain:
-          "Planning, prioritizing, starting, and following through, with systems built around your brain instead of generic productivity advice.",
+          "You need better strategies and systems to help you prioritize tasks, start tasks, keep focus, reduce distractions, stay organized, manage time, cope with impaired memory (working memory, short-term, and long-term!), resist impulses, and deal with emotional dysregulation.",
       },
     ],
     link: { label: "More about my approach", href: "/approach" },
