@@ -12,7 +12,7 @@ export function Hero() {
       <Container className="grid items-center gap-14 pb-20 pt-14 md:pb-28 md:pt-20 lg:grid-cols-12 lg:gap-10">
         <div className="lg:col-span-7">
           <p className="eyebrow">{h.eyebrow}</p>
-          <h1 id="hero-heading" className="mt-6 max-w-[16ch] text-display">
+          <h1 id="hero-heading" className="mt-6 max-w-[22ch] text-[clamp(2rem,1.45rem+2.4vw,3.4rem)] leading-[1.08]">
             {h.heading}
           </h1>
           <p className="mt-8 max-w-[58ch] text-lead text-ink-muted">{h.lead}</p>
