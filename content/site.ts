@@ -126,17 +126,19 @@ export const home = {
   },
 
   recognition: {
-    eyebrow: "Sound familiar?",
-    heading: "From the outside, everything looks fine.",
+    eyebrow: "Sound Familiar?",
+    heading: "From the outside, it looks like you’re managing.",
     items: [
-      "You give everything at work and come home with nothing left for the people you love.",
-      "You feel like you’re falling short at work and at home at the same time.",
-      "You know exactly what needs to get done, and still can’t get yourself to do it consistently.",
-      "The to-do list never shrinks, and the important things keep slipping to tomorrow.",
-      "You’ve spent years wondering why ordinary things seem harder for you than for everyone else.",
+      "You complete work assignments well enough, but you’re exhausted at the end of the day.",
+      "It’s a struggle to keep your head above water at work.",
+      "You’re irritable and angry at home.",
+      "Your partner, your children, or your loved ones sometimes get the worst of you.",
+      "You know exactly what you need to do, but you just can’t get yourself to do it consistently.",
+      "The to-do list feels like a game of whack-a-mole that you’re constantly losing.",
+      "You wonder if everyone else struggles as hard as you are struggling.",
     ],
     closing:
-      "None of this means you’re failing. Often it means the demands on you have outgrown the strategies that used to work.",
+      "It doesn’t need to be this way. You’re not failing; your systems and strategies are failing you.",
   },
 
   paths: {
