@@ -108,8 +108,8 @@ export function Paths() {
       </div>
       <div className="mt-10 grid md:grid-cols-12 md:gap-8">
         <div className="space-y-2 text-ink-muted md:col-span-8 md:col-start-4">
-          <p>{p.also}</p>
           <p>{p.scope}</p>
+          <p>{p.also}</p>
         </div>
       </div>
     </Section>

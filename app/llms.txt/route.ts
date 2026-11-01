@@ -24,7 +24,7 @@ export function GET() {
     `- Areas served (by telehealth): every county in ${site.serviceArea}. Clients must be located in New York State during sessions.`,
     `- Scheduling: ${site.scheduling}`,
     "- Primary focus: Working parents balancing a demanding career with family; adults with ADHD and executive functioning challenges at work, including those diagnosed in adulthood or exploring whether ADHD fits",
-    `- Also works with: ${home.paths.also.replace(/^I also work with /, "").replace(/, which.*$/, "")}`,
+    "- Also works with: anxiety, depression, burnout, chronic pain or health conditions, social anxiety, relationship difficulties, and life transitions",
     `- Approach: Collaborative, strengths-based, and practical. ${home.approach.methods.map((m) => m.name).join(", ")}. Teaches executive functioning skills and strategies as part of therapy.`,
     "- Medication: Does not prescribe. With client permission and a signed HIPAA release, coordinates care with the client’s prescriber.",
     `- Insurance: ${outOfNetwork.lead} Provides superbills and uses Reimbursify to streamline submitting claims.`,

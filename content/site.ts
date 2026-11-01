@@ -143,27 +143,27 @@ export const home = {
 
   paths: {
     eyebrow: "Who I work with",
-    heading: "Two kinds of pressure I know well.",
+    heading: "I know what it’s like to appear high-functioning and struggle on the inside.",
     items: [
       {
-        label: "For working parents",
-        title: "A demanding career and a family that needs you",
+        label: "For working professionals",
+        title: "Your career demands 100%, and your loved ones do, too",
         body:
-          "You care deeply about your work and your family, and you feel like you’re falling short at both. We’ll look at the expectations you carry and build a way of working and parenting that fits your life.",
+          "There are never enough hours in the day and there is never enough patience left for both your work and your family. It seems you’re always letting someone down. We’ll work on a new approach to help you feel fulfilled and at peace when “balance” feels unachievable.",
         href: "/working-parents",
-        cta: "Therapy for working parents",
+        cta: "Therapy for working professionals",
       },
       {
-        label: "For professionals with ADHD",
-        title: "ADHD, or wondering if it’s ADHD",
+        label: "For clients with ADHD",
+        title: "ADHD and the ADHD-curious",
         body:
-          "You’re good at your job, but keeping up takes far more effort than it seems to for everyone else. Whether you were diagnosed as a child, as an adult, or not at all, we’ll work on the systems and the self-doubt.",
+          "You work twice as hard (in occasional sprints) to achieve half of your goals. You’re either at 200% or 0%. The guilt and anxiety come in cycles. What if we reimagined The Tortoise and The Hare? Slow and Steady doesn’t have to win the race. With new systems and strategies in place, The Hare can have its success story, too.",
         href: "/adhd-therapy",
         cta: "Therapy for ADHD",
       },
     ],
     also:
-      "I also work with anxiety, depression, burnout, chronic pain, social anxiety, relationship difficulties, and life transitions, which often show up alongside the pressures above.",
+      "Many adults have more than one concern bringing them to therapy. I also work with clients who struggle with anxiety, depression, burnout, chronic pain or health conditions, social anxiety, relationship difficulties, and life transitions.",
     scope: "I offer individual therapy for adults.",
   },
 
