@@ -114,7 +114,7 @@ export const home = {
     eyebrow: "Telehealth therapy for adults across New York State",
     heading: "You know you’re capable of more. Yet, what’s on your plate already seems like too much.",
     lead:
-      "I’m Tanya Fridland, a therapist and former BigLaw attorney. I work with high-achieving professionals who are overwhelmed by their to-do list, causing them anxiety and guilt and spiraling into irritation and anger with loved ones. My clients don’t need more talk therapy; they need strategies for managing their emotions and systems that work better for their brains, especially for those with ADHD.",
+      "I’m Tanya Fridland, a therapist and former BigLaw attorney. I work with high-achieving professionals who are overwhelmed by their to-do list, causing them anxiety and guilt and spiraling into irritation and anger with loved ones. My clients don’t only need empathy; they need strategies for managing their emotions and systems that work better for their brains, especially for those with ADHD.",
     secondaryCta: { label: "See how I work", href: "#approach" },
     facts: [
       "By video, anywhere in New York State",
