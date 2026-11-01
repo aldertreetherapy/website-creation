@@ -187,6 +187,12 @@ export const home = {
           "Sometimes your thinking isn’t distorted. Sometimes, the reality just sucks. We’ll work to help you deal with tough times.",
       },
       {
+        name: "Motivational Interviewing",
+        abbr: "MI",
+        plain:
+          "You know change is needed. Whether you are reluctant to change, don’t know where to start, or think you need a push to get going, therapy starts from wherever you are.",
+      },
+      {
         name: "Solution-Focused Brief Therapy",
         abbr: "SFBT",
         plain:
