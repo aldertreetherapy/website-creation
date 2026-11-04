@@ -210,10 +210,10 @@ export const home = {
 
   about: {
     eyebrow: "About Tanya",
-    heading: "I know the pace, because I’ve kept it.",
+    heading: "I believe therapy can and should change your life.",
     paragraphs: [
-      "Before becoming a therapist, I practiced as a BigLaw attorney in New York City. I know the expectations of high-achieving environments, and what it can cost to keep up with them.",
-      "My own experiences with ADHD, burnout, and becoming a parent deepened my understanding of how internal and external pressures affect well-being. They shaped how I work today: practical, compassionate, and grounded in evidence.",
+      "Before becoming a therapist, I practiced law at a large firm in New York City. I know the pressures of being “on” 24-7 at work and trying to maintain a home life.",
+      "My own experiences with motherhood and ADHD also affect how I show up for my clients. I know what it’s like to juggle important responsibilities and struggle to maintain emotional composure.",
     ],
     credentialsHeading: "Training and license",
     credential: "Licensed Clinical Social Worker (LCSW), New York State",
