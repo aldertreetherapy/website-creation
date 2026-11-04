@@ -17,8 +17,6 @@ export function IntroVideo({ className = "" }: { className?: string }) {
       >
         <source src={v.src} type="video/mp4" />
         Your browser can’t play this video.
-      </video>
-      <figcaption className="mt-3 text-[0.9rem] text-ink-muted">{v.caption}</figcaption>
-    </figure>
+      </video>    </figure>
   );
 }

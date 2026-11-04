@@ -34,7 +34,6 @@ export const site = {
       poster: "/images/tanya-fridland-intro-poster.jpg",
       width: 640,
       height: 360,
-      caption: "A quick hello from Tanya (14 seconds)",
       title: "Meet Tanya Fridland, LCSW",
       uploadDate: "2026-10-06",
       duration: "PT14S",
