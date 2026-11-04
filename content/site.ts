@@ -221,22 +221,25 @@ export const home = {
 
   process: {
     eyebrow: "Getting started",
-    heading: "How we begin.",
+    heading: "How to begin.",
     steps: [
       {
         title: "Book a free consultation",
+        bookingButton: true,
         body:
-          "Choose a time on my online scheduling page. We’ll talk about what’s bringing you in and whether we’re a good fit, and I can help you check your out-of-network benefits.",
+          "Research shows that whether we’re a good fit is the most important factor for progress in therapy. Schedule a free consultation with me to tell me what brings you to therapy, ask questions about my approach, and get help verifying your out-of-network benefits.",
       },
       {
         title: "Start meeting weekly",
+        bookingButton: false,
         body:
-          "Most clients begin with weekly video sessions, from anywhere in New York State.",
+          "Weekly sessions help us build rapport, build a foundation, and address immediate and long-term goals.",
       },
       {
         title: "Adjust as you go",
+        bookingButton: false,
         body:
-          "Plans change. I’m happy to reschedule on short notice, and we revisit your goals and how often we meet as things shift.",
+          "Plans change. I offer flexible rescheduling on short notice. This in particular has been beneficial for working professionals and parents of young children.",
       },
     ],
   },

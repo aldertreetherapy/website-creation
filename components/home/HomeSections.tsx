@@ -210,7 +210,8 @@ export function Process() {
               {i + 1}
             </span>
             <h3 className="mt-4 text-h3">{s.title}</h3>
-            <p className="mt-3 max-w-[38ch] text-ink-muted">{s.body}</p>
+            {s.bookingButton && <BookingButton className="mt-5" />}
+            <p className="mt-5 max-w-[38ch] text-ink-muted">{s.body}</p>
           </li>
         ))}
       </ol>
