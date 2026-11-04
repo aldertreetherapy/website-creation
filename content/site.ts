@@ -35,8 +35,8 @@ export const site = {
       width: 640,
       height: 360,
       title: "Meet Tanya Fridland, LCSW",
-      uploadDate: "2026-10-06",
-      duration: "PT14S",
+      uploadDate: "2026-11-04",
+      duration: "PT1M14S",
     },
     education: [
       {
