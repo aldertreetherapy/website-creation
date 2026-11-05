@@ -1,7 +1,6 @@
 import { faqs, home, site, outOfNetwork } from "@/content/site";
 import { builtPages } from "@/content/pages";
 import { nyRegions } from "@/content/regions";
-import { articles } from "@/content/articles";
 
 export const dynamic = "force-static";
 
@@ -49,9 +48,6 @@ export function GET() {
     "## Pages",
     `- [Home](${site.url}/)`,
     ...builtPages.map((p) => `- [${p.seoTitle}](${site.url}${p.slug}): ${p.seoDescription}`),
-    "",
-    "## Articles",
-    ...articles.map((a) => `- [${a.title}](${site.url}/articles/${a.slug}): ${a.description}`),
     "",
     "## Frequently asked questions",
     ...faqs.flatMap((f) => [`### ${f.q}`, f.a, ""]),

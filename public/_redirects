@@ -8,3 +8,7 @@
 /faqs          /faq               301
 /contact       /book              301
 /fees          /insurance         301
+
+# Articles were taken down; send old article links to the homepage.
+/articles      /                  301
+/articles/*    /                  301
