@@ -245,15 +245,15 @@ export const home = {
 
   details: {
     eyebrow: "Practical details",
-    heading: "The where, when, and how",
+    heading: "The where, when, and how.",
     items: [
-      { term: "Format", detail: "Individual therapy for adults, by video" },
+      { term: "Format", detail: "Individual therapy for adults, by video." },
       {
         term: "Where",
         detail:
           "For clients located anywhere in New York State: all 62 counties, including New York City, Long Island, the Hudson Valley, the Capital Region, the North Country, Central New York, the Southern Tier, the Finger Lakes, and Western New York.",
       },
-      { term: "Scheduling", detail: "Flexible rescheduling, even on short notice" },
+      { term: "Scheduling", detail: "Flexible rescheduling, even on short notice." },
       {
         term: "Insurance",
         detail:
