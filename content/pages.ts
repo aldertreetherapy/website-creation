@@ -670,15 +670,6 @@ export const areasPage: PageContent = {
       })),
     },
     {
-      kind: "prose",
-      eyebrow: "How it works",
-      heading: "No commute, wherever you are.",
-      paragraphs: [
-        "Sessions take place over secure video, so you can meet from your home, a quiet office, or a parked car between commitments. All you need is a private space and a reliable connection.",
-        "The one requirement is location: you need to be physically in New York State during our sessions, because that’s where I’m licensed.",
-      ],
-    },
-    {
       kind: "faq",
       eyebrow: "Questions",
       heading: "Questions about telehealth.",
@@ -686,8 +677,8 @@ export const areasPage: PageContent = {
     },
   ],
   closing: {
-    heading: "Wherever you are in New York.",
-    body: "Book a free consultation and we’ll see whether working together is a good fit.",
+    heading: "Therapy that meets you where you are.",
+    body: "If you’re ready to start, I offer a free 20-minute consultation to see if we’re a good fit.",
   },
 };
 
