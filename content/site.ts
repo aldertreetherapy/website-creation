@@ -89,19 +89,19 @@ export const outOfNetwork = {
   eyebrow: "Using your insurance",
   heading: "How out-of-network benefits work.",
   lead:
-    "I’m an out-of-network provider and don’t bill insurance directly. Many plans, especially PPOs, reimburse part of the cost of out-of-network therapy. I’ll help you find out what yours covers before we begin.",
+    "I’m an out-of-network provider. Many insurance plans reimburse part of the cost of therapy. I’ll help verify your coverage before we begin.",
   steps: [
     {
       title: "We verify your benefits",
-      body: "Before your first session, I can help you check your out-of-network mental health benefits, so you know what to expect.",
+      body: "Before our first session, I can verify your out-of-network benefits.",
     },
     {
       title: "I provide a superbill",
-      body: "A superbill is a detailed receipt your insurer needs to process a claim. I provide one for your sessions.",
+      body: "Each month, I will send you a superbill for the sessions we’ve had that month. You can submit this to your insurance for reimbursement directly or use Reimbursify, a service I offer to help simplify and expedite this process.",
     },
     {
       title: "You get reimbursed",
-      body: "I use Reimbursify, a service that makes submitting superbills to your insurance company simple, so reimbursement comes back to you with less paperwork.",
+      body: "Your insurance reimburses you according to the superbills submitted.",
     },
   ],
   note: "Reimbursement depends on your plan and isn’t guaranteed.",
