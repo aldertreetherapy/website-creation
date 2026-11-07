@@ -267,7 +267,7 @@ export const home = {
     eyebrow: "Questions",
     heading: "Common questions.",
     // These IDs refer to entries in `faqs` below.
-    ids: ["scheduling", "employer", "adhd-diagnosis", "coach-or-therapist"],
+    ids: ["scheduling", "employer", "adhd-diagnosis", "accommodations", "coach-or-therapist"],
     link: { label: "See all questions", href: "/faq" },
   },
 
@@ -282,12 +282,17 @@ export const faqs = [
   {
     id: "adhd-diagnosis",
     q: "Do I need an ADHD diagnosis before starting therapy?",
-    a: "No. Many of my clients come to therapy wondering whether ADHD might explain some of the challenges they’ve experienced throughout their lives. Together, we’ll explore your symptoms, history, and goals to determine whether pursuing a formal evaluation or diagnosis would be helpful. A diagnosis can provide valuable insight, but it’s only one tool. It doesn’t define who you are.",
+    a: "No. If you believe a diagnosis may be beneficial, we can discuss the process of obtaining one and do screening tests to evaluate your likelihood of having ADHD. Many of my clients want more than just a diagnosis, though. We can work together to determine the root of your struggles and decide how best to address them. This means exploring your symptoms, your history, your goals, and the obstacles you face.",
+  },
+  {
+    id: "accommodations",
+    q: "Do you provide letters for ADHD accommodations for work or school?",
+    a: "Yes. Many of my clients thrive with school accommodations such as longer testing time, quiet testing environments, and extended deadlines. If you need a letter requesting necessary accommodations for school or work, I am happy to work on such a letter with you.",
   },
   {
     id: "coach-or-therapist",
     q: "Should I see an ADHD coach or a therapist?",
-    a: "Many people with ADHD assume they need one person for the practical side and another for the emotional side. In my experience, the two can’t be separated. The guilt over what didn’t get done and the anxiety about what’s coming up are tangled up with the executive functioning challenges themselves. My approach combines teaching executive functioning skills and strategies with therapy, so we work on both together, with one person who sees the whole picture.",
+    a: "ADHD is more than an executive functioning disorder. It can include emotional dysregulation and lead to intense guilt and anxiety. I incorporate teaching executive functioning skills and strategies with addressing your emotional and cognitive needs with traditional therapy techniques. This approach ensures we treat you holistically rather than piecemeal.",
   },
   {
     id: "medication",
@@ -297,7 +302,7 @@ export const faqs = [
   {
     id: "employer",
     q: "Will my employer know I’m in therapy?",
-    a: "My practice is independent of any employer or employee assistance program, and I don’t share information about you with your workplace without your written permission.",
+    a: "I don’t share information about you with your workplace without your written permission (should you want me to do so).",
   },
   {
     id: "anxiety-depression",
@@ -336,8 +341,8 @@ export const faqs = [
   },
   {
     id: "scheduling",
-    q: "Can therapy fit around my work schedule?",
-    a: "Yes, most of my clients fit therapy during their lunch hours or remote work days. I understand work schedules can be demanding and change on short notice, so I offer flexible rescheduling.",
+    q: "Can therapy fit around a demanding work schedule?",
+    a: "Yes, most of my clients fit therapy into their lunch hour or remote work days. I know work and family obligations can pop up at the last minute, so I’m also happy to reschedule when plans change.",
   },
   {
     id: "virtual",

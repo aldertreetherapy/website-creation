@@ -539,7 +539,7 @@ export const faqPage: PageContent = {
       kind: "faq",
       eyebrow: "ADHD",
       heading: "Questions about ADHD.",
-      ids: ["adhd-diagnosis", "organization-only", "coach-or-therapist", "medication"],
+      ids: ["adhd-diagnosis", "accommodations", "organization-only", "coach-or-therapist", "medication"],
     },
     {
       kind: "faq",
