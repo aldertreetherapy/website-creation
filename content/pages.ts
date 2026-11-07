@@ -654,9 +654,9 @@ export const areasPage: PageContent = {
   breadcrumb: "Areas Served",
   hero: {
     eyebrow: "Areas served",
-    heading: "Therapy by video, anywhere in New York State.",
+    heading: "Therapy by telehealth anywhere in New York state.",
     lead:
-      "Because sessions are held by secure video, I can work with adults located anywhere in New York State: all ten regions and all 62 counties. If you’re in New York when we meet, you’re covered.",
+      "I hold sessions via HIPAA-compliant video platforms. If you’re physically located in New York State, you’re covered.",
   },
   sections: [
     {
