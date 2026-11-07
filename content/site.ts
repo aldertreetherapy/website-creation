@@ -336,18 +336,18 @@ export const faqs = [
   },
   {
     id: "scheduling",
-    q: "Can therapy fit around a demanding work schedule?",
-    a: "Yes. Sessions are by video, so there’s no commute, and I’m happy to reschedule on short notice when work or family plans change.",
+    q: "Can therapy fit around my work schedule?",
+    a: "Yes, most of my clients fit therapy during their lunch hours or remote work days. I understand work schedules can be demanding and change on short notice, so I offer flexible rescheduling.",
   },
   {
     id: "virtual",
     q: "Do you offer virtual therapy?",
-    a: "Yes. I provide telehealth therapy for adults located anywhere in New York State.",
+    a: "Yes, we will meet virtually by video for each session.",
   },
   {
     id: "insurance",
     q: "Do you accept insurance?",
-    a: "I’m an out-of-network provider and don’t bill insurance directly. Many clients use out-of-network benefits to help offset the cost of therapy. I can help you verify your out-of-network benefits, and I provide superbills for reimbursement. I also use Reimbursify, a service that helps submit superbills to your insurance company to streamline reimbursement.",
+    a: "I’m an out-of-network provider, and I can provide you with superbills for insurance reimbursement. I also offer Reimbursify, a service that assists with submitting my superbills to your insurance for easy reimbursement. If you’re curious, I can help you verify your out-of-network benefits.",
   },
   {
     id: "fit",
