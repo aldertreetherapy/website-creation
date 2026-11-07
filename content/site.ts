@@ -245,19 +245,19 @@ export const home = {
 
   details: {
     eyebrow: "Practical details",
-    heading: "What to know before you book.",
+    heading: "The where, when, and how",
     items: [
-      { term: "Format", detail: "Individual psychotherapy for adults, by video." },
+      { term: "Format", detail: "Individual therapy for adults, by video" },
       {
         term: "Where",
         detail:
-          "Clients located anywhere in New York State: every region and all 62 counties, from New York City and Long Island to the Hudson Valley, the Capital Region, the North Country, Central New York, the Southern Tier, the Finger Lakes, and Western New York.",
+          "For clients located anywhere in New York State: all 62 counties, including New York City, Long Island, the Hudson Valley, the Capital Region, the North Country, Central New York, the Southern Tier, the Finger Lakes, and Western New York.",
       },
-      { term: "Scheduling", detail: "Flexible rescheduling, even on short notice." },
+      { term: "Scheduling", detail: "Flexible rescheduling, even on short notice" },
       {
         term: "Insurance",
         detail:
-          "Out-of-network. I provide superbills for reimbursement and can help you verify your out-of-network benefits.",
+          "I’m an out-of-network provider. I provide superbills and have a service called Reimbursify, which helps you with submitting your out-of-network claims and streamlining reimbursement.",
       },
     ],
     link: { label: "See all areas served", href: "/areas-served" },
