@@ -157,9 +157,9 @@ export const parentsPage: PageContent = {
   breadcrumb: "Working Parents",
   hero: {
     eyebrow: "Therapy for working parents",
-    heading: "When work and family both need you.",
+    heading: "When you’re stretched thin at work and home.",
     lead:
-      "You care deeply about your work. You care deeply about your family. Yet it can feel like you’re constantly falling short in both. I help parents in demanding careers step out of survival mode and decide, on purpose, where their time and energy go.",
+      "You’re answering work emails at a birthday party and ordering goggles between work calls. You cannot be all things for all people at all moments of the day. Together, we can help prioritize your time and deal with the irritation, anger, anxiety, and guilt that can accompany being a working parent.",
   },
   sections: [
     {
