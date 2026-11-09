@@ -179,9 +179,9 @@ export const parentsPage: PageContent = {
     },
     {
       kind: "quote",
-      text: "“I feel like I’m failing at work, and I’m failing at home.”",
+      text: "“I feel like I’m always letting someone down.”",
       followUp:
-        "Many of the parents I work with tell me some version of this. You’re not failing. You’re trying to meet enormous demands in a world that often expects you to do two full-time jobs, one at work and one at home.",
+        "I’ve heard versions of this from many of my clients. You’re not failing, you’re not a bad parent, and you’re not a bad employee or boss. You are trying to carry several enormous burdens simultaneously, without the emotional regulation or executive functioning tools to do so. Let’s work together to change that.",
     },
     {
       kind: "prose",
