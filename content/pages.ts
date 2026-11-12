@@ -186,10 +186,10 @@ export const parentsPage: PageContent = {
     {
       kind: "prose",
       eyebrow: "Why it’s harder now",
-      heading: "Parenthood reshapes your identity.",
+      heading: "Parenthood, work, and other expectations demand more than 100% of your time.",
       paragraphs: [
-        "The routines, expectations, and strategies that once worked may no longer fit your life. If you have ADHD, anxiety, or perfectionistic tendencies, the mental load can feel even heavier, and the guilt of being chronically behind adds up.",
-        "Before becoming a therapist, I practiced as a BigLaw attorney. That, and my own experience of becoming a parent, gave me a firsthand understanding of how a demanding career and a family can pull in opposite directions.",
+        "You likely didn’t have loads of free time before becoming a parent. And yet, you are now expected to fit a full parenting schedule somewhere into your already demanding life. You may be taking care of an elderly family member, managing more responsibilities at the office, and managing tantrums at once. This is a recipe for burn out, irritation, anger, anxiety, and guilt.",
+        "As a former BigLaw attorney, I understand what overwhelm looks like. It looks like being told you have it all and wondering why you are still unfulfilled or struggling.",
       ],
     },
     {
