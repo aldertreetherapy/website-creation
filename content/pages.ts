@@ -157,7 +157,7 @@ export const parentsPage: PageContent = {
   breadcrumb: "Working Parents",
   hero: {
     eyebrow: "Therapy for working parents",
-    heading: "When you’re stretched thin at work and home.",
+    heading: "If it’s not one thing, it’s another.",
     lead:
       "You’re answering work emails at a birthday party and ordering goggles between work calls. You cannot be all things for all people at all moments of the day. Together, we can help prioritize your time and deal with the irritation, anger, anxiety, and guilt that can accompany being a working parent.",
   },
