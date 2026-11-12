@@ -27,7 +27,7 @@ export default function Page() {
           <p className="eyebrow mt-12">Articles</p>
           <h1 id="page-heading" className="mt-6 max-w-[18ch] text-display">Articles.</h1>
           <p className="mt-8 max-w-[60ch] text-lead text-ink-muted">
-            Thoughts on working parenthood, ADHD, and the pressures of demanding careers, from my work with clients across New York State.
+            I use our therapy time to prioritize your needs. If you’d like to read more about the topics we discuss, please see the articles below. I welcome discussion and thoughts on these in session should you find it helpful.
           </p>
           <div className="mt-14">
             <ArticleList items={articles} />
