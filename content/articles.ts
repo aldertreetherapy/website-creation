@@ -42,7 +42,7 @@ export const articles: Article[] = [
       {
         heading: "Disabled, or simply different?",
         paragraphs: [
-          "Have you ever heard ADHD described as a disability and thought it only half applied to you? One emerging theory is that ADHD is actually an evolutionarily adaptive trait.{{1}}{{2}}{{3}}{{4}} Most people with ADHD have noticed that while they may perform worse than neurotypical peers on certain tasks, they actually outperform neurotypical peers on others. Certain of these tasks almost certainly sustained communities and tribes and propelled advancements in human understanding and technology. Diversity is valuable in a tribe, and early humans with ADHD may have contributed in valuable ways.",
+          "Have you ever heard ADHD described as a disability and thought it only half applied to you? One emerging theory is that ADHD is actually an evolutionarily adaptive trait.{{1}}{{2}}{{3}}{{4}} Most people with ADHD have noticed that while they may perform worse than neurotypical peers on certain tasks, they actually outperform neurotypical peers on others. Some of these tasks almost certainly sustained communities and tribes and propelled advancements in human understanding and technology. Diversity is valuable in a tribe, and early humans with ADHD may have contributed in valuable ways.",
           "Some examples of how ADHD could have been useful:",
         ],
         list: [
@@ -51,7 +51,7 @@ export const articles: Article[] = [
           "Sensitivities to food of unfamiliar texture or taste could have kept people safe from rotten foods or poisonous new foods{{7}}{{8}}",
           "Fidgeting and sensory seeking actions could have led to the development of crafts like knitting, weaving, and pottery",
           "Having a shifted sleep schedule and trouble sleeping at night could have helped with protecting a tribe from attackers or large predators at night{{9}}{{10}}",
-          "Having trouble finishing tasks could have been helped when tasks needed to be imagined, described, and then delegated",
+          "Having trouble finishing tasks could have helped when tasks needed to be imagined, described, and then delegated",
           "Creativity and seeking auditory stimulation could have led to the development of music and various art forms and perpetuated the tradition of oral history storytelling{{11}}{{12}}",
           "Emotional hyperawareness and rejection sensitivity could have been useful for maintaining social connections and community cohesion{{13}}{{14}}",
           "Being a social chameleon could have helped with mediating situations or connecting with neighboring tribes",
@@ -78,7 +78,7 @@ export const articles: Article[] = [
       {
         heading: "What do we do with this information?",
         paragraphs: [
-          "Many of us are not CEOs. Most of us frequently need to finish tasks we find unpleasant. Most of us cannot simply follow our whims to do whatever we please when we please. So how can we harness the advantages of ADHD while coping with the disabling aspects of it? This is where therapy and practicing executive functioning skills are crucial, in addition, of course, to medication where it is warranted, desired, and accessible.{{18}}{{19}} Therapy can help identify what environments are best suited for you long-term (what careers, what sorts of hobbies, what schedules can look like) as well as how to cope with difficult circumstances. If we cannot eliminate undesirable tasks, we can at least decrease the on-ramp for them, make the physical environment more conducive to work, practice executive functioning strategies and skills, and troubleshoot when needed.",
+          "Most of us frequently need to finish tasks we find unpleasant. Most of us cannot simply follow our whims to do whatever we please when we please. So how can we harness the advantages of ADHD while coping with the disabling aspects of it? This is where therapy and practicing executive functioning skills are crucial, in addition, of course, to medication where it is warranted, desired, and accessible.{{18}}{{19}} Therapy can help identify what environments are best suited for you long-term (what careers, what sorts of hobbies, what schedules can look like) as well as how to cope with difficult circumstances. If we cannot eliminate undesirable tasks, we can at least decrease the on-ramp for them, make the physical environment more conducive to work, practice executive functioning strategies and skills, and troubleshoot when needed.",
           "Research shows us that therapy can increase productivity and improvement in people with ADHD and that the effects of therapy lasted even after sessions ended.{{20}}{{21}} Many of my clients harness the power of both. Imagine what might happen if you did.",
         ],
       },
