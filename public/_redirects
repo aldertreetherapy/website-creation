@@ -9,6 +9,12 @@
 /contact       /book              301
 /fees          /insurance         301
 
-# Articles were taken down; send old article links to the homepage.
-/articles      /                  301
-/articles/*    /                  301
+
+# Earlier articles were taken down; send their old links to the Articles page.
+/articles/failing-at-work-and-home    /articles    301
+/articles/mental-load-working-parents    /articles    301
+/articles/returning-to-work-after-parental-leave    /articles    301
+/articles/parenting-with-adhd-demanding-job    /articles    301
+/articles/adhd-lawyers-high-pressure-professionals    /articles    301
+/articles/adult-adhd-diagnosis-what-now    /articles    301
+/articles/out-of-network-therapy-benefits-new-york    /articles    301

@@ -1,6 +1,7 @@
 import { faqs, home, outOfNetwork, site } from "@/content/site";
 import { builtPages } from "@/content/pages";
 import { nyRegions } from "@/content/regions";
+import { articles } from "@/content/articles";
 
 export const dynamic = "force-static";
 
@@ -59,6 +60,7 @@ export function GET() {
     },
     crisis: "This practice can’t respond to emergencies. In a crisis, call or text 988 (Suicide & Crisis Lifeline) or call 911.",
     pages: [{ title: "Home", url: `${site.url}/` }, ...builtPages.map((p) => ({ title: p.seoTitle, url: `${site.url}${p.slug}`, summary: p.seoDescription }))],
+    articles: articles.map((a) => ({ title: a.title, url: `${site.url}/articles/${a.slug}`, summary: a.description })),
     faqs: faqs.map((f) => ({ id: f.id, question: f.q, answer: f.a })),
   };
   return Response.json(data);
