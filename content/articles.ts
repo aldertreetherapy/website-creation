@@ -66,7 +66,7 @@ export const articles: Article[] = [
         list: [
           "Seeking stimulation and novelty can play out as devising new ideas and innovations that drive success at a large company or as risk-taking behavior that leads one to commit crime.",
           "Hyperfocus on a niche interest can be a huge asset in STEM fields and a large disability if it distracts from a job that you were hired to do.",
-          "Sensitivities to stimuli can be seen as eccentric and innovative (think tech CEOs wearing sweatpants) or as undesirable in the workplace (who would want to be the person who cannot eat anything at a work dinner?)",
+          "Sensitivities to stimuli can be seen as eccentric and innovative (the boss wearing casual attire to the office when everyone else is wearing business) or as undesirable in the workplace (who would want to be the person who cannot eat anything at a work dinner?)",
           "Fidgeting can look like motivation and energy (an executive pacing in a room, swiveling in a chair, or constantly on the move) or distracting (doodling in a meeting)",
           "Having a shifted sleep schedule can make one appear productive (Wow! This person is answering emails at 2am!) or unproductive (“I can’t believe they are late again…”)",
           "Having trouble finishing tasks can be an asset (like an executive who needs to be able to delegate) or a liability (like an associate who can’t seem to finish any project on time)",
