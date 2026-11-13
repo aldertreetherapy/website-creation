@@ -211,7 +211,7 @@ export const home = {
     eyebrow: "About Tanya",
     heading: "I believe therapy can and should change your life.",
     paragraphs: [
-      "Before becoming a therapist, I practiced law at a large firm in New York City. I know the pressures of being “on” 24-7 at work and trying to maintain a home life.",
+      "Before becoming a therapist, I practiced law at a large firm in New York City. I know the pressures of being “on” 24/7 at work while trying to maintain a home life.",
       "My own experiences with motherhood and ADHD also affect how I show up for my clients. I know what it’s like to juggle important responsibilities and struggle to maintain emotional composure.",
     ],
     credentialsHeading: "Training and license",
