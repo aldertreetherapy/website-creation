@@ -13,7 +13,7 @@ export function SiteFooter() {
             Alder Tree <span className="italic">Therapy</span>
           </p>
           <p className="mt-3 max-w-[36ch] text-ink-muted">
-            {site.clinician.name}, {site.clinician.credentials}. Individual psychotherapy for adults by telehealth,
+            {site.clinician.name}, {site.clinician.credentials}, JD. Individual psychotherapy for adults by telehealth,
             anywhere in {site.serviceArea}. {site.scheduling}
           </p>
           <p className="mt-6">
