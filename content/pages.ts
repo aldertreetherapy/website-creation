@@ -51,7 +51,7 @@ export const adhdPage: PageContent = {
   slug: "/adhd-therapy",
   seoTitle: "ADHD Therapy for Professionals in New York",
   seoDescription:
-    "Telehealth therapy across New York State for adults with ADHD in demanding jobs. Executive functioning strategies and psychotherapy with Tanya Fridland, LCSW, a former BigLaw attorney.",
+    "Telehealth therapy across New York State for adults with ADHD in demanding jobs. Executive functioning strategies and psychotherapy with Tanya Fridland, LCSW, JD, a former BigLaw attorney.",
   breadcrumb: "ADHD",
   hero: {
     eyebrow: "Therapy for adults with ADHD",
@@ -153,7 +153,7 @@ export const parentsPage: PageContent = {
   slug: "/working-parents",
   seoTitle: "Therapy for Working Parents in New York",
   seoDescription:
-    "Telehealth therapy across New York State for working parents in demanding careers who feel they’re falling short at work and at home. Tanya Fridland, LCSW, former BigLaw attorney.",
+    "Telehealth therapy across New York State for working parents in demanding careers who feel they’re falling short at work and at home. Tanya Fridland, LCSW, JD, former BigLaw attorney.",
   breadcrumb: "Working Parents",
   hero: {
     eyebrow: "Therapy for working parents",
@@ -289,7 +289,7 @@ export const cliniciansPage: PageContent = {
     {
       kind: "prose",
       eyebrow: "Background",
-      heading: "Tanya Fridland, LCSW.",
+      heading: "Tanya Fridland, LCSW, JD.",
       paragraphs: [
         "I’m a New York licensed clinical social worker with an MSW from the Columbia University School of Social Work, where I specialized in Advanced Clinical Social Work Practice. Before becoming a therapist, I practiced as a BigLaw attorney in New York City after earning my JD at Harvard Law School.",
       ],
@@ -397,9 +397,9 @@ export const approachPage: PageContent = {
 
 export const aboutPage: PageContent = {
   slug: "/about",
-  seoTitle: "About Tanya Fridland, LCSW: Therapist and Former BigLaw Attorney",
+  seoTitle: "About Tanya Fridland, LCSW, JD: Therapist and Former BigLaw Attorney",
   seoDescription:
-    "Tanya Fridland, LCSW, is a New York therapist and former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia, working with working parents and adults with ADHD.",
+    "Tanya Fridland, LCSW, JD, is a New York therapist and former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia, working with working parents and adults with ADHD.",
   breadcrumb: "About",
   hero: {
     eyebrow: "About Tanya",
@@ -479,7 +479,7 @@ export const insurancePage: PageContent = {
   slug: "/insurance",
   seoTitle: "Insurance and Out-of-Network Benefits",
   seoDescription:
-    "Alder Tree Therapy is an out-of-network provider. Tanya Fridland, LCSW, provides superbills for insurance reimbursement and helps clients verify their out-of-network benefits.",
+    "Alder Tree Therapy is an out-of-network provider. Tanya Fridland, LCSW, JD, provides superbills for insurance reimbursement and helps clients verify their out-of-network benefits.",
   breadcrumb: "Insurance",
   hero: {
     eyebrow: "Insurance",
@@ -514,7 +514,7 @@ export const faqPage: PageContent = {
   slug: "/faq",
   seoTitle: "Frequently Asked Questions",
   seoDescription:
-    "Answers to common questions about therapy with Tanya Fridland, LCSW: ADHD, working parents, anxiety and depression, scheduling, privacy, and out-of-network insurance.",
+    "Answers to common questions about therapy with Tanya Fridland, LCSW, JD: ADHD, working parents, anxiety and depression, scheduling, privacy, and out-of-network insurance.",
   breadcrumb: "FAQ",
   hero: {
     eyebrow: "Frequently asked questions",
@@ -558,7 +558,7 @@ export const bookPage: PageContent = {
   slug: "/book",
   seoTitle: "Book a Free Consultation",
   seoDescription:
-    "Book a free consultation with Tanya Fridland, LCSW. Telehealth therapy for adults anywhere in New York State.",
+    "Book a free consultation with Tanya Fridland, LCSW, JD. Telehealth therapy for adults anywhere in New York State.",
   breadcrumb: "Book",
   hero: {
     eyebrow: "Getting started",
@@ -650,7 +650,7 @@ export const areasPage: PageContent = {
   slug: "/areas-served",
   seoTitle: "Telehealth Therapy Anywhere in New York State",
   seoDescription:
-    "Tanya Fridland, LCSW, provides telehealth therapy to adults in every county of New York State, from New York City, Long Island and Westchester to Albany, Syracuse, Rochester, Buffalo and the North Country.",
+    "Tanya Fridland, LCSW, JD, provides telehealth therapy to adults in every county of New York State, from New York City, Long Island and Westchester to Albany, Syracuse, Rochester, Buffalo and the North Country.",
   breadcrumb: "Areas Served",
   hero: {
     eyebrow: "Areas served",

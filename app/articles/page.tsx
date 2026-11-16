@@ -8,7 +8,7 @@ import { ClosingCta } from "@/components/sections";
 export const metadata: Metadata = {
   title: "Articles for Working Parents and Professionals with ADHD",
   description:
-    "Articles by Tanya Fridland, LCSW, on adult ADHD, working parenthood, and the pressures of demanding careers.",
+    "Articles by Tanya Fridland, LCSW, JD, on adult ADHD, working parenthood, and the pressures of demanding careers.",
   alternates: { canonical: "/articles" },
 };
 

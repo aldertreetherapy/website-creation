@@ -12,19 +12,19 @@ export const site = {
   clinician: {
     name: "Tanya Fridland",
     pronouns: "she/her",
-    credentials: "LCSW",
+    credentials: "LCSW, JD",
     title: "Licensed Clinical Social Worker",
     licenseState: "New York",
     headshot: {
       src: "/images/tanya-fridland-lcsw-portrait.jpg",
-      alt: "Tanya Fridland, LCSW, smiling, in a navy sweater beside a sunlit window",
+      alt: "Tanya Fridland, LCSW, JD, smiling, in a navy sweater beside a sunlit window",
       width: 1000,
       height: 920,
     },
     /** Second headshot, used at the top of the About page. */
     seatedPhoto: {
       src: "/images/tanya-fridland-lcsw-seated.jpg",
-      alt: "Tanya Fridland, LCSW, seated on a sofa by a sunlit window, smiling",
+      alt: "Tanya Fridland, LCSW, JD, seated on a sofa by a sunlit window, smiling",
       width: 400,
       height: 400,
     },
@@ -34,7 +34,7 @@ export const site = {
       poster: "/images/tanya-fridland-intro-poster.jpg",
       width: 640,
       height: 360,
-      title: "Meet Tanya Fridland, LCSW",
+      title: "Meet Tanya Fridland, LCSW, JD",
       uploadDate: "2026-11-04",
       duration: "PT1M14S",
     },
@@ -72,7 +72,7 @@ export const site = {
     summary: "Accepting new clients. Free consultations can be booked online, and current openings are shown live on the booking page.",
   },
   description:
-    "Telehealth therapy across New York State for working parents in demanding careers and professionals with ADHD, including anxiety, depression, and burnout. Tanya Fridland, LCSW, is a former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia.",
+    "Telehealth therapy across New York State for working parents in demanding careers and professionals with ADHD, including anxiety, depression, and burnout. Tanya Fridland, LCSW, JD, is a former BigLaw attorney with a JD from Harvard Law School and an MSW from Columbia.",
 } as const;
 
 export const nav = [

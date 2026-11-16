@@ -113,7 +113,7 @@ export function videoGraph() {
     "@type": "VideoObject",
     "@id": `${site.url}/#intro-video`,
     name: v.title,
-    description: "A short introduction from Tanya Fridland, LCSW, of Alder Tree Therapy.",
+    description: "A short introduction from Tanya Fridland, LCSW, JD, of Alder Tree Therapy.",
     thumbnailUrl: `${site.url}${v.poster}`,
     contentUrl: `${site.url}${v.src}`,
     uploadDate: v.uploadDate,
