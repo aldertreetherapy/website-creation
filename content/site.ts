@@ -313,7 +313,7 @@ export const faqs = [
   {
     id: "what-to-expect",
     q: "What can I expect in therapy?",
-    a: "Therapy is collaborative, individualized, and practical. We’ll work together to better understand what’s contributing to your current challenges while building skills and strategies you can apply in everyday life. Depending on your goals, sessions may include exploring patterns, learning coping strategies, strengthening executive functioning skills, or developing new ways of responding to difficult thoughts and emotions.",
+    a: "Each client’s needs are different, so therapy is a tailored experience. Our first session is an intake, where I’ll ask about your goals, concerns, strengths, background, and support systems. From there, we’ll design a treatment plan to help you reach your goals. We’ll tackle unexpected challenges as they come up. I welcome feedback along the way: it’s your time, and I want to make sure we make the most of it.",
   },
   {
     id: "different",
@@ -338,7 +338,7 @@ export const faqs = [
   {
     id: "frequency",
     q: "How often will we meet?",
-    a: "Most clients begin with weekly sessions. As you make progress and your needs change, we can discuss adjusting the frequency of sessions together.",
+    a: "We’ll start with weekly sessions. As you make progress or your needs change, we can discuss moving to less frequent sessions.",
   },
   {
     id: "scheduling",
