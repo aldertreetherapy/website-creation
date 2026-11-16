@@ -203,11 +203,15 @@ export const parentsPage: PageContent = {
         },
         {
           title: "Practical tools and skills",
-          body: "Sometimes, you know you can do better. Let’s arm you with the tools to do so. This looks like practical strategies for managing children, strategies designed to lessen burn out, and tools to emotionally regulate when you need to.",
+          body: "Sometimes, you know you can do better. Let’s arm you with the tools to do so. This looks like practical strategies for managing children and strategies designed to lessen burnout.",
         },
         {
           title: "Emotional regulation skills",
           body: "You can manage your negative emotions better: reduce worry, reduce anger and irritability, reduce hopelessness. You can connect more with yourself and with others.",
+        },
+        {
+          title: "Changing your core beliefs",
+          body: "We can explore where your core beliefs come from and alter those narratives. How did you form that voice in your head? Is it your mom’s criticism? Your boss’s narratives of you? Wherever it comes from, if it’s not helpful, we can work to change it.",
         },
       ],
     },
