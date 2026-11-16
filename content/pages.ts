@@ -232,8 +232,8 @@ export const parentsPage: PageContent = {
     { kind: "outOfNetwork" },
   ],
   closing: {
-    heading: "Make room to think it through.",
-    body: "Therapy is a place to slow down and decide what you want your work and family life to look like. A free consultation is a good first step.",
+    heading: "You’ve already taken the first step.",
+    body: "It’s hard to invest the time and money needed to make a change. Let’s start by seeing if we’re a good fit. I offer a free consultation for you to ask questions and for us to discuss my approach and logistics.",
   },
   related: [{ label: "Therapy for adults with ADHD", href: "/adhd-therapy" }],
 };
