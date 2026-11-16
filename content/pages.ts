@@ -220,7 +220,7 @@ export const parentsPage: PageContent = {
       eyebrow: "The goal",
       heading: "You only get one life. How do you want to spend it?",
       paragraphs: [
-        "You chose a particular career, a marriage, and children likely because you thought it would make you happy. If that’s not happening, something needs to change. Often, that something is your perspective and the tools you have to manage your brain. Let’s help you make the most of what you have worked so hard to get.",
+        "You chose a particular career, a partner, and children likely because you thought they would make you happy. If that’s not happening, something needs to change. Often, that something is your perspective and the tools you have to manage your brain. Let’s help you make the most of what you have worked so hard to get.",
       ],
     },
     {
