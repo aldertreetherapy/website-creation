@@ -218,9 +218,9 @@ export const parentsPage: PageContent = {
     {
       kind: "prose",
       eyebrow: "The goal",
-      heading: "Not perfect balance. A life that reflects your values.",
+      heading: "You only get one life. How do you want to spend it?",
       paragraphs: [
-        "My goal isn’t to help you achieve a mythical state of perfect balance. It’s to help you build a life where success isn’t measured by doing everything perfectly, but by feeling more present, more connected, and more like yourself.",
+        "You chose a particular career, a marriage, and children likely because you thought it would make you happy. If that’s not happening, something needs to change. Often, that something is your perspective and the tools you have to manage your brain. Let’s help you make the most of what you have worked so hard to get.",
       ],
     },
     {
