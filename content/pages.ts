@@ -195,23 +195,19 @@ export const parentsPage: PageContent = {
     {
       kind: "pairs",
       eyebrow: "What we work on",
-      heading: "Fewer impossible standards, more of what matters.",
+      heading: "If we can’t change your schedule, what can we change?",
       items: [
         {
-          title: "The expectations you carry",
-          body: "Examining the standards you’ve set for yourself as a professional and a parent, and which ones are worth keeping.",
+          title: "Your judgments and expectations of yourself",
+          body: "You might be a perfectionist constantly struggling with guilt or imposter syndrome in multiple domains. Or you might expect yourself to never yell at your kids and be riddled with shame when you do. We’ll work to shift your perspective in a more helpful direction.",
         },
         {
-          title: "What matters most",
-          body: "Identifying what’s truly important to you, so your time and attention follow your values.",
+          title: "Practical tools and skills",
+          body: "Sometimes, you know you can do better. Let’s arm you with the tools to do so. This looks like practical strategies for managing children, strategies designed to lessen burn out, and tools to emotionally regulate when you need to.",
         },
         {
-          title: "Practical systems",
-          body: "Strategies for schedules, decisions, and the mental load, built around your real week.",
-        },
-        {
-          title: "Flexibility and self-compassion",
-          body: "Navigating competing responsibilities without treating every tradeoff as a failure.",
+          title: "Emotional regulation skills",
+          body: "You can manage your negative emotions better: reduce worry, reduce anger and irritability, reduce hopelessness. You can connect more with yourself and with others.",
         },
       ],
     },
